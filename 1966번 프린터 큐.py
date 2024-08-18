@@ -7,19 +7,16 @@ for _ in range(t):
     queue = list(map(int, sys.stdin.readline().split()))
     index = [i for i in range(n)]
     
-count = 0
-while True:
-    if queue[0] == max(queue):
-        count += 1
-        if queue[0] == m:
-            print(count)
-            break
+    count = 0
+    while True:
+        if queue[0] == max(queue):
+            count += 1
+            if index[0] == m:
+                print(count)
+                break
+            else:
+                queue.pop(0)
+                index.pop(0)
         else:
-            del queue[0]
-            del index[0]
-    else:
-        queue.append(queue[0])
-        del queue[0]
-        index.append(index[0])
-        del index[0]
-    
+            queue.append(queue.pop(0))
+            index.append(index.pop(0))
