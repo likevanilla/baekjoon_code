@@ -8,7 +8,7 @@ def round(x):
         return int(x)
 
 n = int(sys.stdin.readline())
-
+ 
 if n:
     dif = []
     avg = round(n * 0.15)
