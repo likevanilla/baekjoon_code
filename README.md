@@ -4,6 +4,7 @@
 ## 사용 언어
 - Python
 - Java
+- Javascript
 
 ## 프로필
 - [백준](https://www.acmicpc.net/user/wjdgur2751)
